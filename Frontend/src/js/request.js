@@ -1,10 +1,10 @@
 
 $(document).ready(function() {
-    $('#SubmitWomen').on('click',function(event){
+    $("#FormWomen").submit(function(event){
         event.preventDefault();
         $.ajax({
-        url: 'localhost:8000/user/signup',
-        // dataType: "jsonp",
+        url: 'localhost:8000/user/signup',  
+         dataType: "jsonp",
         data: {
         name: $('#NameWoman').val(), 
           age: $('#AgeWoman').val(),
@@ -14,10 +14,11 @@ $(document).ready(function() {
           pincode:$('PincodeWoman').val()
         },
         type: 'POST',
-        jsonpCallback: 'callback', // this is not relevant to the POST anymore
+        jsonpCallback: 'callback', 
         success: function (data) {
             var ret = jQuery.parseJSON(data);
-//            $('#women-signup').html(ret.msg);
+            
+//    $('#women-signup').html(ret.msg);
             console.log('Success: ')
         },
         error: function (xhr, status, error) {
