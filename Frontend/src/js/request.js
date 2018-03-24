@@ -9,7 +9,7 @@ $(document).ready(function() {
         name: $('#NameWoman').val(), 
           age: $('#AgeWoman').val(),
           address: $('#AddressWomen').val(),
-          district:('#DistrictWoman').val(),
+          district:$('#DistrictWoman').val(),
           state:$('#StateWoman').val(),
           pincode:$('PincodeWoman').val()
         },
