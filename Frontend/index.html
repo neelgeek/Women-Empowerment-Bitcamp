@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Wahmen</title>
+  <title>Women</title>
   <link rel="stylesheet" href="src/css/font-awesome.min.css">
   <link rel="stylesheet" href="src/css/bootstrap.css">
   <link rel="stylesheet" href="src/css/style.css">
@@ -19,7 +19,7 @@
  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
     <div class="container">
       <a href="index.html" class="navbar-brand">
-        <img src="https://i.pinimg.com/736x/83/fe/eb/83feebe6cd76e15d5d20ab7e348b8208--batman-logo.jpg" width="50" height="50" alt=""><h3 class="d-inline align-middle text-white" style="padding-left: 12px; ">Wahmen</h3>
+        <img src="https://i.pinimg.com/736x/83/fe/eb/83feebe6cd76e15d5d20ab7e348b8208--batman-logo.jpg" width="50" height="50" alt=""><h3 class="d-inline align-middle text-white" style="padding-left: 12px; ">Women</h3>
       </a>
       
       
@@ -44,41 +44,131 @@
   </nav>
   
   
-  <section id="main">
+  
+  
+<!--  ######################## MODAL-->
+  <div class="modal fade" id="WomenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+	<div class="modal-header bg-secondary text-white bg-dark">
+	    <h2>Login</h2>
+		<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true" title="Close">&times;</span> <span class="sr-only">Close</span></button>
+	</div>
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<form>
+				    <div class="form-group">
+                                      <input type="text" placeholder="Phone Number" class="form-control form-control-lg">
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="Password" placeholder="Password" class="form-control form-control-lg">
+                                  </div>
+                                  
+                                  <button class="btn btn-primary d-block">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+
+<!--##############MODAL BUSINESS#######################-->
+
+<div class="modal fade" id="EnterpriseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+	<div class="modal-header bg-secondary text-white bg-dark">
+	    <h2>Login</h2>
+		<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true" title="Close">&times;</span> <span class="sr-only">Close</span></button>
+	</div>
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<form>
+				    <div class="form-group">
+                                      <input type="email" placeholder="E-mail address" class="form-control form-control-lg">
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="Password" placeholder="Password" class="form-control form-control-lg">
+                                  </div>
+                                  
+                                  <button class="btn btn-primary d-block">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+
+<!--#################################################MODAL 3#########################################-->
+
+<div class="modal fade" id="TrainingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+	<div class="modal-header bg-secondary text-white bg-dark">
+	    <h2>Login</h2>
+		<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true" title="Close">&times;</span> <span class="sr-only">Close</span></button>
+	</div>
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<form>
+				    <div class="form-group">
+                                      <input type="email" placeholder="E-mail address" class="form-control form-control-lg">
+                                  </div>
+                                  <div class="form-group">
+                                      <input type="Password" placeholder="Password" class="form-control form-control-lg">
+                                  </div>
+                                  
+                                  <button class="btn btn-primary d-block">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+
+<!--#######################MODAL 3 ENd############################-->
+ 
+ <section id="main">
       <div class="container">
           <div class="row">
               <div class="col-lg-4">
-                  <div class="card text-dark text-center">
+                  <div class="card text-dark text-center wow slideInLeft">
                       <div class="card-body">
                           <img class="card-img-top" src="src/img/mlogo.png" alt="Card image cap">
                           <h5 class="card-title">Women</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <a href="#" class="btn btn-primary d-block mb-3">Sign up</a>
-                     <a href="#" class="btn btn-success d-block">Log In</a>
+    <a href="signup-women.html" class="btn btn-primary d-block mb-3">Sign up</a>
+                     <a href="#" class="btn btn-success d-block" data-toggle="modal" data-target="#WomenModal" data-backdrop="false">Log In</a>
                       </div>
                   </div>
               </div>
               
               <div class="col-lg-4">
-                  <div class="card text-dark text-center">
-                      <div class="card-body">
+                  <div class="card text-dark text-center wow slideInDown">
+                      <div class="card-body wow slideInDown">
                           <img class="card-img-top" src="src/img/mlogo.png" alt="Card image cap">
                           <h5 class="card-title">Business</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <a href="#" class="btn btn-primary d-block mb-3">Signup</a>
-                      <a href="#" class="btn btn-success d-block">Log In</a>
+    <a href="signup-company.html" class="btn btn-primary d-block mb-3">Signup</a>
+                      <a href="#" class="btn btn-success d-block" data-toggle="modal" data-target="#EnterpriseModal" data-backdrop="false">Log In</a>
                       </div>
                   </div>
               </div>
               
               <div class="col-lg-4">
-                  <div class="card text-dark text-center">
+                  <div class="card text-dark text-center wow slideInRight">
                       <div class="card-body">
                           <img class="card-img-top" src="src/img/mlogo.png" alt="Card image cap">
                           <h5 class="card-title">Training</h5>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <a href="#" class="btn btn-primary d-block mb-3">Signup</a>
-                      <a href="#" class="btn btn-success d-block">Log In</a>
+    <a href="signup-training.html" class="btn btn-primary d-block mb-3">Signup</a>
+                      <a href="#" class="btn btn-success d-block" data-toggle="modal" data-target="#TrainingModal" data-backdrop="false">Log In</a>
                       </div>
                   </div>
               </div>
@@ -86,24 +176,66 @@
       </div>
   </section>
   
-  
-  
-  
+<!--####################section 1 end##################################  -->
 
- 
+  <section class="bg-dark">
+      <div class="container">
+          <div class="row" style="margin-left: 250px;">
+              <div class="col-lg-6">
+                  <div class="card my-5 w-50 wow slideInRight">
+                      <div class="card-body">
+                          <img src="src/img/mlogo.png" alt="" class="img img-fluid">
+                          <div class="card-header text-center">Skills</div>
+                          <div class="card-text pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dicta fugit necessitatibus.</div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="col-lg-6">
+                  <div class="card my-5 w-50 wow slideInLeft">
+                      <div class="card-body">
+                          <img src="src/img/mlogo.png" alt="" class="img img-fluid">
+                          <div class="card-header text-center">Community</div>
+                          <div class="card-text pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dicta fugit necessitatibus.</div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="col-lg-6">
+                  <div class="card my-5 w-50 wow slideInRight">
+                      <div class="card-body">
+                          <img src="src/img/mlogo.png" alt="" class="img img-fluid">
+                          <div class="card-header text-center">Leadership</div>
+                          <div class="card-text pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dicta fugit necessitatibus.</div>
+                      </div>
+                  </div>
+              </div>
+              
+               <div class="col-lg-6">
+                  <div class="card my-5 w-50 wow slideInLeft">
+                      <div class="card-body">
+                          <img src="src/img/mlogo.png" alt="" class="img img-fluid">
+                          <div class="card-header text-center">Benefits</div>
+                          <div class="card-text pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dicta fugit necessitatibus.</div>
+                      </div>
+                  </div>
+              </div>
+              
+              
+          </div>
+      </div>
+  </section>  
 
--->
+
  
  
  
   
 
   <script src="src/js/jquery.min.js"></script>
-  <script src="src/js/index.js"></script>
   <script src="src/js/popper.min.js"></script>
   <script src="src/js/bootstrap.min.js"></script>
   <script src="src/js/navbar-fixed.js"></script>
-  <script src="src/js/script.js"></script>
   <script src="src/js/anime.min.js"></script>
   <script src="src/js/button.js"></script>
   <script src="src/js/wow.min.js"></script>

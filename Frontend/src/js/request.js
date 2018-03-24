@@ -1,6 +1,9 @@
 $(document).ready(function() {
+
     $('#FormWomen').submit(function(event) {
+
         event.preventDefault();
+
         console.log('AjaX CALLED');
         $.ajax({
             url: 'http://localhost:8000/user/signup',
