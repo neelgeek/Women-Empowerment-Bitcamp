@@ -6,5 +6,5 @@ const schema = mongoose.Schema({
     email: String,
     district: String,
     state: String,
-    isIndus: boolean
+    isIndus: Boolean
 });

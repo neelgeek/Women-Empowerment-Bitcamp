@@ -1,33 +1,35 @@
-
 $(document).ready(function() {
-    $("#FormWomen").submit(function(event){
+<
+    $('#FormWomen').submit(function(event) {
+
         event.preventDefault();
+        console.log('AjaX CALLED');
         $.ajax({
-        url: 'localhost:8000/user/signup',  
-         dataType: "jsonp",
-        data: {
-        name: $('#NameWoman').val(), 
-          age: $('#AgeWoman').val(),
-          address: $('#AddressWomen').val(),
-          district:$('#DistrictWoman').val(),
-          state:$('#StateWoman').val(),
-          pincode:$('PincodeWoman').val()
-        },
-        type: 'POST',
-        jsonpCallback: 'callback', 
-        success: function (data) {
-            var ret = jQuery.parseJSON(data);
-            
-//    $('#women-signup').html(ret.msg);
-            console.log('Success: ')
-        },
-        error: function (xhr, status, error) {
-            console.log('Error: ' + error.message);
-//            $('#lblResponse').html('Error connecting to the server.');
-        },
+            url: 'http://localhost:8000/user/signup',
+            dataType: "json",
+            data: {
+                "name": $('#NameWoman').val(),
+                "age": $('#AgeWoman').val(),
+                "address": $('#AddressWomen').val(),
+                "district": $('#DistrictWoman').val(),
+                "state": $('#StateWoman').val(),
+                "pincode": $('PincodeWoman').val()
+            },
+            type: 'POST',
+            jsonpCallback: 'callback', // this is not relevant to the POST anymore
+            success: function(data) {
+                // var ret = jQuery.parseJSON(data);
+                //            $('#women-signup').html(ret.msg);
+                console.log(data)
+            },
+            error: function(xhr, status, error) {
+                console.log('Error: ' + status + ' ' + error.message);
+                //            $('#lblResponse').html('Error connecting to the server.');
+            },
+        });
+>>>>>>> 18892ea88a20fa3634635a48cc3cb13206c622cd
     });
-    });
-    
+
 });
 
 
