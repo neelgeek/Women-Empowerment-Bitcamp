@@ -12,6 +12,8 @@ $(document).ready(function() {
                 "name": $('#NameWoman').val(),
                 "age": $('#AgeWoman').val(),
                 "address": $('#AddressWomen').val(),
+                "password": $('#PasswordWoman').val(),
+                "confirmpassword":$('#ConfirmPasswordWoman').val(),
                 "district": $('#DistrictWoman').val(),
                 "state": $('#StateWoman').val(),
                 "pincode": $('PincodeWoman').val(),
@@ -31,7 +33,6 @@ $(document).ready(function() {
     });
 
    $('#FormCompany').submit(function(event){
-    
         event.preventDefault();
         console.log("Ajax called?");   
         $.ajax({
