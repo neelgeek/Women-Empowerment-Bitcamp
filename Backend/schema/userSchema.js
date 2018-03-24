@@ -10,7 +10,8 @@ const userSchema = mongoose.Schema({
     pincode: Number,
     district: String,
     state: String,
-    skills: Array
+    skills: Array,
+    isHired: { type: Boolean, default: false }
 });
 
 

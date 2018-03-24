@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const job = mongoose.Schema({
     title: String,
     skills: Array,
-    days: number,
-    pay: number
+    days: Number,
+    pay: Number
 });
 
 module.exports = job;
