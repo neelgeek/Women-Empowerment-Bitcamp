@@ -12,7 +12,7 @@ class User {
             return userdet
         }).catch(err => {
             throw err;
-        })
+        });
     }
 
     findUser(mobile) {
