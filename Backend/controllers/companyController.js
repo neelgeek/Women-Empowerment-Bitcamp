@@ -38,5 +38,10 @@ module.exports.controllerFunction = function(app) {
         });
     });
 
+
+    router.post('/postjob', (req, res) => {
+
+    });
+
     app.use('/company', router);
 }

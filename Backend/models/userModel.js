@@ -16,12 +16,8 @@ class User {
     }
 
     findUser(mobile) {
-        return this.userModel.find({ mobile }).then(userDet => {
-            if (userDet.length > 0) {
-                return userDet;
-            } else {
-                throw new Error("No user Found");
-            }
+        return this.userModel.findOne({ mobile }).then(userDet => {
+            return userDet;
         }).catch(err => {
             throw err;
         })
