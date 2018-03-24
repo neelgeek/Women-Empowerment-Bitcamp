@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const userSchema = mongoose.Schema({
     name: String,
-    mobile: Number,
+    mobile: { type: Number, unqiue: true },
     password: String,
     age: Number,
     address: String,
@@ -10,7 +10,8 @@ const userSchema = mongoose.Schema({
     pincode: Number,
     district: String,
     state: String,
-    skills: Array
+    skills: Array,
+    isHired: { type: Boolean, default: false }
 });
 
 

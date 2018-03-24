@@ -19,9 +19,15 @@ module.exports.controllerFunction = function(app) {
     router.post('/signin', (req, res) => {
         let user = new userModel();
         let mobile = req.body.mobile;
+        console.log(req.body);
         user.findUser(mobile).then(userDetails => {
-            if (userDetails) {
+            console.log(userDetails);
+            if (userDetails.password === req.body.password) {
                 res.status(200).json(userDetails);
+            } else {
+                res.status(500).json({
+                    message: false
+                });
             }
 
         }).catch(err => {

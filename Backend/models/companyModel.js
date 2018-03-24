@@ -8,7 +8,7 @@ class company {
     }
 
     save(details) {
-        let company = new this.companyModel(detils);
+        let company = new this.companyModel(details);
         return company.save().then(company => {
             return company;
         }).catch(err => {
@@ -17,7 +17,7 @@ class company {
     }
 
     findCompany(email) {
-        return this.companyModel.find({ email }).then(userDet => {
+        return this.companyModel.findOne({ email }).then(userDet => {
             if (userDet.length > 0) {
                 return userDet;
             } else {
