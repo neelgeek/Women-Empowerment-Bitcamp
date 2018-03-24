@@ -1,0 +1,48 @@
+body {
+    font-family: 'Raleway', sans-serif;
+  margin-top: 150px; }
+
+.navbar {
+  box-shadow: 1px 1px 3px black;
+  opacity: 0.94;
+/*  background: #000; */
+    background-color: grey;
+}
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 20px; 
+}
+
+#container1 {
+overflow:hidden;
+position:relative;
+z-index: 1;
+
+}
+
+#pixie {
+z-index:0;
+background-color: #000000;
+}
+    
+#over_stuff{
+color:white;
+position:absolute;
+top:0px;
+left:0px;
+z-index:5;
+padding-top:1px;
+width: 100%;
+margin-top: 12%;
+margin-left:2%;
+margin-right:2%;
+margin-bottom: 50px;
+}
+
+
+
+/*
+#main-row {
+    margin-left: 300px;
+}
+*/    
