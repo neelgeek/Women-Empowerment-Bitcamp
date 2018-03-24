@@ -1,8 +1,9 @@
 $(document).ready(function() {
-<
+
     $('#FormWomen').submit(function(event) {
 
         event.preventDefault();
+
         console.log('AjaX CALLED');
         $.ajax({
             url: 'http://localhost:8000/user/signup',
@@ -27,7 +28,6 @@ $(document).ready(function() {
                 //            $('#lblResponse').html('Error connecting to the server.');
             },
         });
->>>>>>> 18892ea88a20fa3634635a48cc3cb13206c622cd
     });
 
 });
