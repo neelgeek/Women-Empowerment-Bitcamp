@@ -33,6 +33,8 @@ $(document).ready(function() {
         
         
     }); 
+
+
         $('#WomenLogin').submit(function(event) {
 
             event.preventDefault();
@@ -54,6 +56,41 @@ $(document).ready(function() {
                     console.log(data)  
                     if(data) {
                         window.location="../Frontend/loginpage-women.html";
+                    }    
+                },
+                error: function(xhr, status, error) {
+                    console.log('Error: ' + status + ' ' + error.message);
+                    //            $('#lblResponse').html('Error connecting to the server.');
+                },
+            });
+        });
+
+
+        $('#FormCompany').submit(function(event) {
+
+            event.preventDefault();
+    
+            console.log('AjaX CALLED');
+            $.ajax({
+                url: 'http://localhost:8000/company/signup',
+                dataType: "json",
+                data: {
+                    "name":$('#NameEnterprise').val(),
+                    "email": $('#EmailEnterprise').val(),
+                    "password":$('#password').val(),
+                    "district": $('#DistrictEnterprise').val(),
+                    "state": $('#PincodeEnterprise').val(),
+                    "isIndus": $('Enterprise').val(),
+                    
+                },
+                type: 'POST',
+                jsonpCallback: 'callback', // this is not relevant to the POST anymore
+                success: function(data) {
+                    // var ret = jQuery.parseJSON(data);
+                    //            $('#women-signup').html(ret.msg);
+                    console.log(data)  
+                    if(data) {
+                        //window.location="../Frontend/loginpage-women.html";
                     }    
                 },
                 error: function(xhr, status, error) {
