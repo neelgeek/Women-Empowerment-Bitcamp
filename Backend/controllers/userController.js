@@ -20,8 +20,12 @@ module.exports.controllerFunction = function(app) {
         let user = new userModel();
         let mobile = req.body.mobile;
         user.findUser(mobile).then(userDetails => {
-            if (userDetails) {
+            if (userDetails.password == req.body.password) {
                 res.status(200).json(userDetails);
+            } else {
+                res.status(200).json({
+                    message: true
+                });
             }
 
         }).catch(err => {

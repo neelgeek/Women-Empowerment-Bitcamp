@@ -8,7 +8,7 @@ class company {
     }
 
     save(details) {
-        let company = new this.companyModel(detils);
+        let company = new this.companyModel(details);
         return company.save().then(company => {
             return company;
         }).catch(err => {
