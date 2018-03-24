@@ -57,12 +57,12 @@
 	<div class="modal-body">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<form id="WomenLogin">
+				<form id="WomenLogin" method="POST">
 				    <div class="form-group">
-                                      <input type="text" placeholder="Phone Number" class="form-control form-control-lg">
+                                      <input type="text" placeholder="Phone Number" class="form-control form-control-lg" id="pno">
                                   </div>
                                   <div class="form-group">
-                                      <input type="Password" placeholder="Password" class="form-control form-control-lg">
+                                      <input type="Password" placeholder="Password" class="form-control form-control-lg" id="pass">
                                   </div>
                                   
                                   <button class="btn btn-primary d-block">Submit</button>
@@ -239,6 +239,7 @@
   <script src="src/js/anime.min.js"></script>
   <script src="src/js/button.js"></script>
   <script src="src/js/wow.min.js"></script>
+  <script src="src/js/request.js"></script>
               <script>
               new WOW().init();
               </script>
