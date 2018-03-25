@@ -34,6 +34,14 @@ class Job {
             throw err;
         });
     }
+
+    addEmployee(id, jobid) {
+        return this.jobModel.update({ _id: jobid }, { $push: { hired: id } }).then(updatedJob => {
+            return updatedJob;
+        }).catch(err => {
+            throw err;
+        });
+    }
 }
 
 module.exports = Job;
