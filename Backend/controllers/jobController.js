@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const jobModel = require('../models/jobModel');
 
+
 module.exports.controllerFunction = function(app) {
 
     router.post('/postJob', (req, res) => {
@@ -28,18 +29,23 @@ module.exports.controllerFunction = function(app) {
         });
     });
 
-    router.patch('/hire/:id/:jobid', (req, res) => {
+    router.post('/hire/:id/:jobid', (req, res) => {
         let userid = req.params.id;
         let jobid = req.param.jobid;
         let user = new jobModel();
         user.hire(userid).then(useresponse => {
-            res.status(200).json(useresponse);
+            user.addEmployee(userid, jobid).then(result => {
+                res.status(200).json(result);
+            }).catch(err => {
+                throw err;
+            })
         }).catch(err => {
             res.status(500).json({
                 message: err.message
             });
         })
     });
+
 
 
     app.use('/job', router);
