@@ -27,7 +27,7 @@ module.exports.controllerFunction = function(app) {
                 res.status(200).json(userDetails);
             } else {
                 res.status(200).json({
-                    message: true
+                    message: false
                 });
             }
 
