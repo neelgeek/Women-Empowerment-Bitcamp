@@ -18,6 +18,7 @@ class Job {
     }
 
     searchWomen(skil) {
+        console.log(skil);
         return this.userModel.find({ skills: { $in: skil }, isHired: false })
             .then(users => {
                 return users;

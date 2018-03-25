@@ -19,6 +19,7 @@ module.exports.controllerFunction = function(app) {
 
     router.post('/find', (req, res) => {
         let skills = req.body.skills;
+        console.log(req.body);
         let userWithSkills = new jobModel();
         userWithSkills.searchWomen(skills).then(response => {
             res.status(200).json(response);
