@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="index.html" class="nav-link text-white">Home</a>
+            <a href="index.html" class="nav-link text-white">Logout</a>
           </li>
         
         </ul>
@@ -48,29 +48,30 @@
 	<div class="modal-body">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<form id="CompanyLogin">
+				<form id="PostJob" method="POST">
                 <div class="form-group">
-                                <input type="text" placeholder="Job Title" class="form-control form-control-lg">    
-                                     </div>
+                                <input type="text" placeholder="Job Title" class="form-control form-control-lg" id="job_title">    
+                </div>
 				    <div class="form-group">
                         <label class="col-md-4 control-label" for="rolename">Skills</label>
                         
                             <select id="dates-field2" class="multiselect-ui form-control" multiple="multiple">
-                                <option value="skill1">Skill1</option>
-                                <option value="skill2">Skill2</option>
-                                <option value="skill3">Skill3</option>
-                                <option value="skill4">Skill4</option>
-                                <option value="skill5">Skill5</option>
+                                <option value="Sewing">Sewing</option>
+                                <option value="Weaving">Weaving</option>
+                                <option value="Cooking">Cooking</option>
+                                <option value="Packaging">Packaging</option>
+                                <option value="Technician">Technician</option>
+                                <option value="Cleaning">Cleaning</option>
                                 
                             </select>
                         </div>
                     
                             <div class="form-group">
-                                <input type="text" placeholder="Days" class="form-control form-control-lg"> 
+                                <input type="text" placeholder="Days" class="form-control form-control-lg" id="job_days"> 
                                      </div>
                                      
                             <div class="form-group">
-                                <input type="text" placeholder="Pay" class="form-control form-control-lg">
+                                <input type="text" placeholder="Pay" class="form-control form-control-lg" id="job_pay">
                                      </div>         
                                   
                                   <button class="btn btn-primary d-block">Submit</button>
@@ -115,6 +116,7 @@
   <script src="src/js/anime.min.js"></script>
   <script src="src/js/button.js"></script>
   <script src="src/js/wow.min.js"></script>
+  <script src="src/js/request.js"></script>
               <script>
               new WOW().init();
               </script>
