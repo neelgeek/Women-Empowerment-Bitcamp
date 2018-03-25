@@ -19,7 +19,7 @@
  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
     <div class="container">
       <a href="index.html" class="navbar-brand">
-        <img src="https://i.pinimg.com/736x/83/fe/eb/83feebe6cd76e15d5d20ab7e348b8208--batman-logo.jpg" width="50" height="50" alt=""><h3 class="d-inline align-middle text-white" style="padding-left: 12px; ">Women</h3>
+        <img src="src/img/women-empowerment.jpg" width="50" height="50" alt=""><h3 class="d-inline align-middle text-white" style="padding-left: 12px; ">Women</h3>
       </a>
       
       
@@ -30,14 +30,15 @@
             <a href="#home" class="nav-link text-white">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#shop-books" class="nav-link text-white">abc</a>
+            <a href="#member-benefits" class="nav-link text-white">Member Benefits</a>
           </li>
           <li class="nav-item">
-            <a href="#created-by" class="nav-link text-white">cde</a>
+            <a href="#contact-us" class="nav-link text-white">Contact us</a>
           </li>
-          <li class="nav-item">
-            <a href="#contact-us" class="nav-link text-white">efg</a>
-          </li>
+          
+           <b><li class="nav-item bg-dark text-center">
+            <a href="event-post.html" class="nav-link text-white text-center">Post an event</a>
+          </li></b>
         </ul>
       </div>
     </div>
@@ -86,12 +87,12 @@
 	<div class="modal-body">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<form>
+				<form id="CompanyLogin">
 				    <div class="form-group">
-                                      <input type="email" placeholder="E-mail address" class="form-control form-control-lg">
+                                      <input type="email" placeholder="E-mail address" class="form-control form-control-lg" id="comp_email">
                                   </div>
                                   <div class="form-group">
-                                      <input type="Password" placeholder="Password" class="form-control form-control-lg">
+                                      <input type="Password" placeholder="Password" class="form-control form-control-lg" id="comp_password">
                                   </div>
                                   
                                   <button class="btn btn-primary d-block">Submit</button>
@@ -134,14 +135,14 @@
 
 <!--#######################MODAL 3 ENd############################-->
  
- <section id="main">
-      <div class="container">
-          <div class="row">
+ <section id="main" class="bg-dark">
+      <div class="container bg-secondary px-5 pt-5 pb-3 mb-5">
+          <div class="row mb-5">
               <div class="col-lg-4">
-                  <div class="card text-dark text-center wow slideInLeft">
+                  <div class="card text-white bg-dark text-center wow slideInLeft">
                       <div class="card-body">
-                          <img class="card-img-top" src="src/img/mlogo.png" alt="Card image cap">
-                          <h5 class="card-title">Women</h5>
+                          <img class="card-img-top" src="src/img/woman.png" alt="Card image cap">
+                          <h3 class="card-title pt-2">Women</h3>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <a href="signup-women.html" class="btn btn-primary d-block mb-3">Sign up</a>
                      <a href="#" class="btn btn-success d-block" data-toggle="modal" data-target="#WomenModal" data-backdrop="false">Log In</a>
@@ -150,10 +151,10 @@
               </div>
               
               <div class="col-lg-4">
-                  <div class="card text-dark text-center wow slideInDown">
+                  <div class="card text-white bg-dark text-center wow slideInDown">
                       <div class="card-body wow slideInDown">
-                          <img class="card-img-top" src="src/img/mlogo.png" alt="Card image cap">
-                          <h5 class="card-title">Business</h5>
+                          <img class="card-img-top" src="src/img/business.png" alt="Card image cap">
+                          <h3 class="card-title pt-2 bg-dark text-white">Business</h3>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <a href="signup-company.html" class="btn btn-primary d-block mb-3">Signup</a>
                       <a href="#" class="btn btn-success d-block" data-toggle="modal" data-target="#EnterpriseModal" data-backdrop="false">Log In</a>
@@ -162,10 +163,10 @@
               </div>
               
               <div class="col-lg-4">
-                  <div class="card text-dark text-center wow slideInRight">
+                  <div class="card text-white bg-dark text-center wow slideInRight">
                       <div class="card-body">
-                          <img class="card-img-top" src="src/img/mlogo.png" alt="Card image cap">
-                          <h5 class="card-title">Training</h5>
+                          <img class="card-img-top" src="src/img/training.png"     alt="Card image cap">
+                          <h3 class="card-title pt-2">Training</h3>
     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     <a href="signup-training.html" class="btn btn-primary d-block mb-3">Signup</a>
                       <a href="#" class="btn btn-success d-block" data-toggle="modal" data-target="#TrainingModal" data-backdrop="false">Log In</a>
@@ -178,9 +179,10 @@
   
 <!--####################section 1 end##################################  -->
 
-  <section class="bg-dark">
+  <section id="member-benefits" class="bg-dark">
       <div class="container">
-          <div class="row" style="margin-left: 250px;">
+         <center><h2 class="pt-5 text-white">Member Benefits</h2></center>
+          <div class="row" style="margin-left: 230px;">
               <div class="col-lg-6">
                   <div class="card my-5 w-50 wow slideInRight">
                       <div class="card-body">
@@ -224,7 +226,59 @@
               
           </div>
       </div>
-  </section>  
+  </section>
+  
+    <section id="contact-us">
+        <div class="container">
+           <center><h2 class="pt-5 wow slideInDown">Contact us</h2></center>
+            <div class="row my-5">
+                <div class="col-lg-6">
+                     <div id="accordion1" role="tablist">
+            <div class="card wow slideInLeft">
+              <div class="card-header head bg-dark" id="heading1">
+                <h5 class="mb-0">
+                 <center> <div class="text-white" href="#collapse1" data-toggle="collapse" data-parent="#accordion1" style="cursor: pointer;">
+                    <i class="fa fa-arrow-circle-down"></i> Email
+                  </div></center>
+                </h5>
+              </div>
+
+              <div id="collapse1" class="collapse bg-light">
+               <center> <div class="card-body">
+                  <p>Something@email.com</p>
+                  <p>Something@email.com</p>
+                </div></center>
+              </div>
+            </div>
+         </div>
+    </div>
+                    
+                    
+                    
+    <div class="col-lg-6">
+        <div id="accordion2" role="tablist">
+            <div class="card wow slideInRight">
+              <div class="card-header head bg-dark" id="heading1">
+                <h5 class="mb-0">
+                 <center> <div class="text-white" href="#collapse2" data-toggle="collapse" data-parent="#accordion2" style="cursor: pointer;">
+                    <i class="fa fa-arrow-circle-down"></i> Social Media
+                  </div></center>
+                </h5>
+              </div>
+
+              <div id="collapse2" class="collapse bg-light text-white">
+               <center> <div class="card-body">
+                  <a href="http://wwww.facebook.com"><p>Facebook</p></a>
+                  <a href="http://wwww.twitter.com"><p>Twitter</p></a>
+                </div></center>
+              </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    </section>  
 
 
  

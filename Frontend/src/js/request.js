@@ -79,8 +79,40 @@ $(document).ready(function() {
                     "email": $('#EmailEnterprise').val(),
                     "password":$('#password').val(),
                     "district": $('#DistrictEnterprise').val(),
-                    "state": $('#PincodeEnterprise').val(),
-                    "isIndus": $('Enterprise').val(),
+                    "state": $('#StateEnterprise').val(),
+                    "isIndus": ($('#Enterprise').val()=="Enterprise")?true:false,
+                    
+                },
+                type: 'POST',
+                jsonpCallback: 'callback', // this is not relevant to the POST anymore
+                success: function(data) {
+
+                    // var ret = jQuery.parseJSON(data);
+                    //            $('#women-signup').html(ret.msg);
+                    console.log(data)  
+                    if(data) {
+                        window.location="../Frontend/loginpage-company.html";
+                    }    
+                },
+                error: function(xhr, status, error) {
+                    console.log('Error: ' + status + ' ' + error.message);
+                    //            $('#lblResponse').html('Error connecting to the server.');
+                },
+            });
+        });
+
+
+         $('#CompanyLogin').submit(function(event) {
+
+            event.preventDefault();
+    
+            console.log('AjaX CALLED');
+            $.ajax({
+                url: 'http://localhost:8000/company/signin',
+                dataType: "json",
+                data: {
+                    "email":$('#comp_email').val(),
+                    "password": $('#comp_password').val(),
                     
                 },
                 type: 'POST',
@@ -90,7 +122,7 @@ $(document).ready(function() {
                     //            $('#women-signup').html(ret.msg);
                     console.log(data)  
                     if(data) {
-                        //window.location="../Frontend/loginpage-women.html";
+                        window.location="../Frontend/loginpage-company.html";
                     }    
                 },
                 error: function(xhr, status, error) {

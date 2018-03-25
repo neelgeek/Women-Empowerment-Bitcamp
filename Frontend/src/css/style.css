@@ -5,7 +5,7 @@ body {
 .navbar {
   box-shadow: 1px 1px 3px black;
   opacity: 0.94;
-    background-color: grey;
+  background: grey;
 }
   .navbar .nav-item {
     font-size: 1.4rem;
@@ -125,4 +125,9 @@ span.multiselect-native-select select {
 .form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
 	margin-left: -20px;
 	margin-right: 0
+}
+
+.card-form{
+	max-width: 50%;
+	margin: 0px auto;
 }
