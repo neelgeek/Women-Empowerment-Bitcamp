@@ -43,24 +43,21 @@
                     <div class="card-body bg-secondary text-white">
                         <form id="FormCompany">
                             <div class="form-group">
-                            <label for="NameEnterprise">Enterprise Name</label>
-                            <input type="text" class="form-control" id="NameEnterprise" aria-describedby="nameHelp" placeholder="Enter Enterprise Name">
-
-                            </div>
-                            
-                             <div class="form-group">
-                            <label for="EmailEnterprise">E-mail</label>
-                            <input type="text" class="form-control" id="EmailEnterprise" aria-describedby="nameHelp" placeholder="Enter Email">
-
+                              <label for="NameEnterprise">Enterprise Name</label>
+                              <input type="text" class="form-control w-50" id="NameEnterprise" aria-describedby="nameHelp" placeholder="Enter Enterprise Name">
                             </div>
                             
                             <div class="form-group">
-                            <label for="PasswordEnterprise">Password</label>
-                            <input type="password" class="form-control" id="PasswordEnterprise" aria-describedby="nameHelp" placeholder="Enter Password">
-
+                              <label for="EmailEnterprise">E-mail</label>
+                              <input type="text" class="form-control w-50" id="EmailEnterprise" aria-describedby="nameHelp" placeholder="Enter Email">
                             </div>
                             
+                            <div class="form-group">
+                              <label for="EnterPassword">Passsword</label>
+                              <input type="password" class="form-control w-50" id="password" aria-describedby="passHelp" placeholder="Enter Password">
+                            </div>
 
+                          
                           <div class="form-group">
                             <label for="StateEnterprise">State</label>
                             <input type="text" class="form-control" id="StateEnterprise" aria-describedby="nameHelp" placeholder="Enter State">
@@ -68,17 +65,16 @@
 
                          
                             <div class="form-group">
-                            <label for="DistrictEnterprise">District</label>
-                            <input type="text" class="form-control" id="DistrictEnterprise" aria-describedby="nameHelp" placeholder="Enter District">
-                          </div>
 
-                          
+                              <label for="DistrictEnterprise">District</label>
+                              <input type="text" class="form-control w-50" id="DistrictEnterprise" aria-describedby="nameHelp" placeholder="Enter District">
+                          </div>                        
                           
                           <div class="form-group">
                               <label for="Enterprise">Enterprise</label>
                               <select class="form-control" id="Enterprise">
-                              <option>Small Business</option>
-                              <option>Enterprise</option>
+                              <option >Small Business</option>
+                              <option >Enterprise</option>
                               </select>
                           </div>
                           
@@ -110,6 +106,7 @@
   <script src="src/js/anime.min.js"></script>
   <script src="src/js/button.js"></script>
   <script src="src/js/wow.min.js"></script>
+  <script src="src/js/request.js"></script>
               <script>
               new WOW().init();
               </script>

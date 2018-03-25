@@ -26,7 +26,7 @@ module.exports.controllerFunction = function(app) {
             if (userDetails.password == req.body.password) {
                 res.status(200).json(userDetails);
             } else {
-                res.status(200).json({
+                res.status(500).json({
                     message: false
                 });
             }
