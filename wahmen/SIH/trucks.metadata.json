@@ -1,1 +1,0 @@
-{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"SIH.trucks"},{"v":2,"unique":true,"key":{"trucknum":1},"name":"trucknum_1","ns":"SIH.trucks","background":true}],"uuid":"75ebd8a29e13445caa3d4f7f42f4f09e"}

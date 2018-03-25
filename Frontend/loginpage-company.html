@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Women</title>
+  <link rel="stylesheet" href="src/css/font-awesome.min.css">
+  <link rel="stylesheet" href="src/css/bootstrap.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+  
+
+  
+</head>
+
+<body id="home">
+<nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="src/img/women-empowerment.jpg" width="50" height="50" alt=""><h3 class="d-inline align-middle text-white" style="padding-left: 12px; ">Women</h3>
+      </a>
+      
+      
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-white">Home</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+<!--  ####################################MODAL#####################################3#################-->
+<div class="modal fade" id="companyLoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+	<div class="modal-header bg-secondary text-white bg-dark">
+	    <h2>Login</h2>
+		<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true" title="Close">&times;</span> <span class="sr-only">Close</span></button>
+	</div>
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<form id="CompanyLogin">
+                <div class="form-group">
+                                <input type="text" placeholder="Job Title" class="form-control form-control-lg">    
+                                     </div>
+				    <div class="form-group">
+                        <label class="col-md-4 control-label" for="rolename">Skills</label>
+                        
+                            <select id="dates-field2" class="multiselect-ui form-control" multiple="multiple">
+                                <option value="skill1">Skill1</option>
+                                <option value="skill2">Skill2</option>
+                                <option value="skill3">Skill3</option>
+                                <option value="skill4">Skill4</option>
+                                <option value="skill5">Skill5</option>
+                                
+                            </select>
+                        </div>
+                    
+                            <div class="form-group">
+                                <input type="text" placeholder="Days" class="form-control form-control-lg"> 
+                                     </div>
+                                     
+                            <div class="form-group">
+                                <input type="text" placeholder="Pay" class="form-control form-control-lg">
+                                     </div>         
+                                  
+                                  <button class="btn btn-primary d-block">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+  </div>
+</div>
+
+<!--######################################MODAL##########################################################-->
+<section>
+    <div class="container">
+        <center><button class="btn btn-dark text-center mx-5 btn-lg w-50" data-toggle="modal" data-target="#companyLoginModal" data-backdrop="false">
+            Add new Job
+        </button></center>
+        <hr>
+    
+        <center><div class="card border-secondary mb-3" style="max-width: 70%;">
+        <div class="card-header bg-dark text-white">Job listings posted before</div>
+        <div class="card-body text-dark">
+            <a href=""><li>Lorem ipsum dolor sit amet, consectetur.</li></a>
+            <a href=""> <li>Lorem ipsum dolor sit amet, consectetur.</li></a>
+            <a href=""> <li>Lorem ipsum dolor sit amet, consectetur.</li></a>
+    </div>
+</div> </center>
+        
+    </div>
+    
+</section>
+
+
+
+
+  
+  <script src="src/js/button.js"></script> 
+  <script src="src/js/jquery.min.js"></script>
+  <script src="src/js/popper.min.js"></script>
+  <script src="src/js/bootstrap.min.js"></script>
+  <script src="src/js/navbar-fixed.js"></script>
+  <script src="src/js/anime.min.js"></script>
+  <script src="src/js/button.js"></script>
+  <script src="src/js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+<script type="text/javascript">
+$(function() {
+    $('.multiselect-ui').multiselect({
+        includeSelectAllOption: true
+    });
+});
+</script>
+                            
+</body>
+</html>
