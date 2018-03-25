@@ -22,7 +22,9 @@ module.exports.controllerFunction = function(app) {
     router.post('/signin', (req, res) => {
         let company = new companyModel();
         let email = req.body.email;
+
         company.findCompany(email).then(userDetails => {
+            console.log(userDetails.password, req.body.password);
             if (userDetails.password == req.body.password) {
                 res.status(200).json(userDetails);
             } else {

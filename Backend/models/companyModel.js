@@ -18,11 +18,7 @@ class company {
 
     findCompany(email) {
         return this.companyModel.findOne({ email }).then(userDet => {
-            if (userDet.length > 0) {
-                return userDet;
-            } else {
-                throw new Error("No company Found");
-            }
+            return userDet;
         }).catch(err => {
             throw err;
         })
